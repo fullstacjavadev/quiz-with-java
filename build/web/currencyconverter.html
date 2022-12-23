@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+        <style>
+            span{
+                font-size: 20px;
+                
+            }
+            .rd{
+/*                border: 2px solid black;*/
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="text-center">Currency Converter</h1>
+        </header>
+        <hr>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h1>FROM </h1>
+                </div>
+               
+                <div class="col-lg-6 col-md-12">
+                    <h1>TO</h1>
+                </div>
+            </div>
+            <form action="currencyconverter" method="post">
+            <div class="row">
+                
+                
+                    <div class="col-lg-3 col-md-12">
+                     <input type="text" class="form-control" name="currencyfrom"/>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <select class="form-control" name="from" >
+                        <option value="INR">India rupee</option>
+                        <option value="CAD">Canadian</option>
+                        <option value="USD">United State Dollar</option>
+                        <option value="CHF">Swiss France</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">British Pound Sterling</option>
+                        <option value="OMR">Omaini Rial</option>
+                        <option value="BHD">Bahraini dinar</option>
+                        
+                    </select>
+                </div>
+                
+                <div class="col-lg-3 col-md-12">
+                    
+                    <input type="text" class="form-control" name="currencyto"/>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <select class="form-control" name="to">
+                        <option value="INR">India rupee</option>
+                        <option value="CAD">Canadian dollar</option>
+                        <option value="USD">United state Dollar</option>
+                        <option value="CHF">Swiss France</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">British Pound Sterling</option>
+                        <option value="OMR">Omaini Rial</option>
+                        <option value="BHD">Bahriani dinar</option>
+                        
+                    </select>
+                </div>
+                    
+            </div>
+<!--            <div class="row">-->
+                <div class="col-lg-3 col-md-6 mt-5">
+                        <input type="submit" value="Convert Currency"/>
+                 </div>
+                    <!--</div>-->   
+                </form>
+            
+        </div>
+    </body>
+</html>
